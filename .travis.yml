@@ -7,4 +7,4 @@ script:
   - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./bin/Release/travis-ci-hello-world-c-sharp-test.dll
   - zip -r build.zip src bin/Release/travis-ci-hello-world-c-sharp.dll readme.md
 after_success:
-    "curl --ftp-create-dirs -T build.zip -u $travis_ftp_user:$travis_ftp_pass ftp://$travis_ftp_host/file.zip"
+    "curl --ftp-create-dirs -T build.zip -u $travis_ftp_user:$travis_ftp_pass ftp://$travis_ftp_host/build.zip"
