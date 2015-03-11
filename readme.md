@@ -8,10 +8,10 @@ What am I testing
 
 I will be testing that travis ci will:
 
-- Build the project
-- Run the Unit Test Solution
-- The commit message tag [ci skip] will skip the build on the server
-- That I can zip and then upload files to a website via FTP once complete
+- [x] Build the project
+- [x] Run the Unit Test Solution
+- [x] The commit message tag [ci skip] will skip the build on the server
+- [x] That I can zip and then upload files to a website via FTP once complete
 
 Code Status
 -----------
