@@ -5,8 +5,6 @@ install:
 script:
   - xbuild /p:Configuration=Release travis-ci-hello-world-c-sharp-test.sln
   - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./bin/Release/travis-ci-hello-world-c-sharp-test.dll
-  - chmod a+x ./zip-upload-ftp.sh
-  - ./zip-upload-ftp.sh
   - zip -r build.zip src bin/Release/travis-ci-hello-world-c-sharp.dll readme.md
 after_success:
     "curl --ftp-create-dirs -T build.zip -u $travis_ftp_user:$travis_ftp_pass ftp://$travis_ftp_host/file.zip"
