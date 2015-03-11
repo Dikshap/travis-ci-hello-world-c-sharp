@@ -5,4 +5,5 @@ install:
 script:
   - xbuild /p:Configuration=Release travis-ci-hello-world-c-sharp-test.sln
   - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./bin/Release/travis-ci-hello-world-c-sharp-test.dll
+  - chmod a+x ./zip-upload-ftp.sh
   - ./zip-upload-ftp.sh
