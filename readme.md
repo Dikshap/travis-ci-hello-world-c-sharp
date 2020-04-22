@@ -3,7 +3,7 @@ Travis CI - Hello World - C#
 
 This is a test repository for the new C# compilation methods in [Travis-CI](http://www.travis-ci.org/).
 
-What am I testing
+What am I testing.
 -----------------
 
 I will be testing that travis ci will:
